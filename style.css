@@ -12,6 +12,15 @@ li {
     display: inline-block;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+i {
+    margin-bottom: 0.5rem;
+}
+
 
 /* #region utility */
 
