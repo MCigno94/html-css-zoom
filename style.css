@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 750px;
+}
+
+li {
+    display: inline-block;
+}
+
+
+/* #region utility */
+
+:root {
+    --primary: #222222;
+    --secondary: #4BC800;
+}
+
+.bk_txt {
+    background-color: rgb(114 111 111 / 66%);
+}
+
+.b_radius {
+    border-radius: 5px;
+}
+
+.p_all {
+    padding: 5px;
+}
+
+.m_all {
+    margin: 5px;
+}
+
+.m_center {
+    margin: 0 auto;
+}
+
+.txt_white {
+    color: white;
+}
+
+.txt_center {
+    text-align: center;
+}
+
+.txt_lt {
+    font-size: 12px;
+}
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.f_l {
+    float: left;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* #endregion utility */
+
+
+/* #region main */
+
+#window_main {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    min-width: 100%;
+    min-height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.top_right_btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.speaker {
+    margin-right: 0.5rem;
+}
+
+.container_user {
+    width: 90%;
+    height: 90%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    gap: 10px 3px;
+}
+
+.user {
+    width: calc(80vw / 7);
+    min-width: 90px;
+    flex-grow: 1;
+    background-image: url("./img/montagna.jpg");
+    background-size: cover;
+    background-position: center top;
+    border: 2px solid black;
+    position: relative;
+}
+
+.name_user {
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* #endregion main */
+
+
+/* #region footer */
+
+#window_footer {
+    width: 100%;
+    height: 80px;
+    background-color: var(--primary);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.end {
+    line-height: 80px;
+}
+
+.container_left,
+.container_main {
+    align-items: center;
+}
+
+.container_left div,
+.container_main div {
+    padding: 0 0.5rem;
+}
+
+.container_right {
+    height: 100%;
+    padding: 0 1rem;
+    color: red;
+}
+
+
+/* #endregion footer */
